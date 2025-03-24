@@ -6,7 +6,7 @@ def print_hello():
 def read_and_analyze_log():
     '''로그 파일을 읽고 분석하는 함수'''
     try:
-        with open('./week01/No1/mission_computer_main.log', 'r', encoding='utf-8') as file:
+        with open('./No1/mission_computer_main.log', 'r', encoding='utf-8') as file:
             print('=== 로그 파일 내용 ===')
             # 첫 줄(헤더) 건너뛰기
             header = file.readline()
@@ -20,7 +20,7 @@ def read_and_analyze_log():
             print('=== 로그 파일 끝 ===')
             
             # 분석 보고서 작성
-            with open('./week01/No1/log_analysis.md', 'w', encoding='utf-8') as report:
+            with open('./No1/log_analysis.md', 'w', encoding='utf-8') as report:
                 report.write('# 화성 기지 사고 분석 보고서\n\n')
                 
                 # 임무 개요

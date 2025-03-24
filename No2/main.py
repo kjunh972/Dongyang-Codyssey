@@ -86,7 +86,7 @@ def main():
     '''메인 함수'''
     # 인벤토리 파일 읽기
     print('=== 화성 기지 인벤토리 분석 ===')
-    header, inventory_list = read_inventory_file('./week01/No2/Mars_Base_Inventory_List.csv')
+    header, inventory_list = read_inventory_file('./No2/Mars_Base_Inventory_List.csv')
     
     if inventory_list:
         # 인화성 순서로 정렬
@@ -106,7 +106,7 @@ def main():
             print('- {0}: {1}'.format(data[0], flammability))
         
         # 위험 목록 CSV 저장
-        save_to_csv(header, dangerous_items, './week01/No2/Mars_Base_Inventory_danger.csv')
+        save_to_csv(header, dangerous_items, './No2/Mars_Base_Inventory_danger.csv')
 
 
 if __name__ == '__main__':

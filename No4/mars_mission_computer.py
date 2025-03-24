@@ -1,11 +1,15 @@
 import time
-import json
-import sys
-import os
 
-# No3 디렉토리 경로 추가
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from No3.mars_mission_computer import DummySensor
+# No3의 mars_mission_computer.py 파일에서 DummySensor 가져오기
+no3_file_path = './No3/mars_mission_computer.py'
+
+# 파일의 내용을 글로벌 네임스페이스에 로드
+no3_globals = {}
+with open(no3_file_path, 'r') as file:
+    exec(file.read(), no3_globals)
+
+# DummySensor 클래스를 글로벌 네임스페이스로 가져오기
+DummySensor = no3_globals['DummySensor']
 
 
 class MissionComputer:
@@ -40,7 +44,13 @@ class MissionComputer:
                 
                 # JSON 형태로 출력
                 print('\n=== 화성 기지 환경 정보 ===')
-                print(json.dumps(self.env_values, indent=2, ensure_ascii=False))
+                print("{")
+                for i, (key, value) in enumerate(self.env_values.items()):
+                    if i < len(self.env_values) - 1:
+                        print(f'  "{key}": {value},')
+                    else:
+                        print(f'  "{key}": {value}')
+                print("}")
                 
                 # 5초 대기
                 time.sleep(5)
