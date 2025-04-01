@@ -3,7 +3,7 @@ import platform
 import os
 
 # No4의 mars_mission_computer.py 파일에서 DummySensor 가져오기
-no4_file_path = './No4/mars_mission_computer.py'
+no4_file_path = './project1/No4/mars_mission_computer.py'
 
 # 파일의 내용을 글로벌 네임스페이스에 로드
 no4_globals = {}

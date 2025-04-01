@@ -1,7 +1,7 @@
 import time
 
 # No3의 mars_mission_computer.py 파일에서 DummySensor 가져오기
-no3_file_path = './No3/mars_mission_computer.py'
+no3_file_path = './project1/No3/mars_mission_computer.py'
 
 # 파일의 내용을 글로벌 네임스페이스에 로드
 no3_globals = {}
