@@ -132,6 +132,11 @@ def unlock_zip():
                 print(f'시도한 비밀번호: {attempts:,}개')
                 print(f'초당 시도 횟수: {int(attempts/total_time):,}개/초')
                 
+                # 비밀번호를 파일에 저장
+                with open('./project2/No1/password.txt', 'w') as f:
+                    f.write(password)
+                print(f'비밀번호가 password.txt 파일에 저장되었습니다.')
+                
                 # 다른 프로세스들 종료
                 for p in processes:
                     if p.is_alive():
