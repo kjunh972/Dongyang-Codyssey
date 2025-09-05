@@ -20,6 +20,9 @@
 - [문제7: 자비스가 필요해!](#문제7-자비스가-필요해)
 - [문제8: 음성에서 문자로](#문제8-음성에서-문자로)
 
+### 필수 과정3: 또 하나의 희망
+- [문제2: 통신장비에 채팅 기능 추가](#문제2-통신장비에-채팅-기능-추가)
+
 ## 필수 과정1: 이별은 화성
 
 ### 문제1: 미션 컴퓨터를 복구하고 사고 원인을 파악해 보자
@@ -89,6 +92,22 @@
 - **문제 링크**: [Codyssey 플랫폼 필수단계 2-8](https://usr.codyssey.kr/learning/learningProgress/detail)
 - **설명**: 녹음된 파일을 텍스트로 변환하는 기능 구현
 
+## 필수 과정3: 또 하나의 희망
+
+### 문제2: 통신장비에 채팅 기능 추가
+- **디렉토리**: [project3/NO2](/project3/NO2)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 3-2](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: TCP/IP 소켓 통신을 이용한 멀티 클라이언트 채팅 시스템 구현
+- **주요 파일**: 
+  - [chat_server.py](/project3/NO2/chat_server.py) - 채팅 서버
+  - [chat_client.py](/project3/NO2/chat_client.py) - 채팅 클라이언트
+- **주요 기능**:
+  - 멀티 쓰레드를 이용한 동시 접속 지원
+  - 입장/퇴장 알림 메시지
+  - 전체 브로드캐스트 메시징
+  - 귓속말 기능 
+  - '/종료' 명령으로 안전한 연결 종료
+
 ## 실행 방법
 
 ### 필수단계 1 과제 실행 방법
@@ -113,6 +132,26 @@ python mars_mission_computer.py
 cd project2
 python3 calculator.py
 ```
+
+### 필수단계 3-2 채팅 시스템 실행 방법
+채팅 시스템을 테스트하려면 다음 순서로 실행합니다:
+
+1. **서버 실행**:
+```bash
+cd project3/NO2
+python chat_server.py
+```
+
+2. **클라이언트 실행** (여러 개 가능):
+```bash
+cd project3/NO2
+python chat_client.py
+```
+
+**사용법**:
+- 일반 채팅: 메시지 입력 후 Enter
+- 귓속말: `/귓속말 닉네임 메시지`
+- 종료: `/종료`
 
 ## 참고 자료
 
