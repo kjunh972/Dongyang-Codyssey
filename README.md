@@ -23,6 +23,7 @@
 ### 필수 과정3: 또 하나의 희망
 - [문제2: 통신장비에 채팅 기능 추가](#문제2-통신장비에-채팅-기능-추가)
 - [문제4: 조금 더 나은 웹서버](#문제4-조금-더-나은-웹서버)
+- [문제7: 정기적으로 배달되는 지구소식](#문제7-정기적으로-배달되는-지구소식)
 
 ## 필수 과정1: 이별은 화성
 
@@ -123,6 +124,13 @@
   - 접속 시간 및 클라이언트 IP 로깅
   - 웹브라우저에서 정상 접속 확인 가능
 
+### 문제7: 정기적으로 배달되는 지구소식
+- **디렉토리**: [project3/No7](/project3/No7)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 3-7](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: KBS 뉴스 사이트에서 실제 헤드라인 뉴스를 크롤링하는 프로그램
+- **주요 파일**: 
+  - [crawling_KBS.py](/project3/No7/crawling_KBS.py) - KBS 뉴스 크롤링 프로그램
+
 ## 실행 방법
 
 ### 필수단계 1 과제 실행 방법
@@ -186,6 +194,25 @@ http://localhost:8080
 - 우주 해적단 소개 페이지 제공
 - 서버 콘솔에서 접속 시간 및 IP 주소 확인
 - 서버 종료: `Ctrl+C`
+
+### 필수단계 3-7 KBS 뉴스 크롤링 실행 방법
+KBS 뉴스 크롤링 프로그램을 실행하려면:
+
+1. **필요한 패키지 설치**:
+```bash
+pip install beautifulsoup4 requests selenium webdriver-manager
+```
+
+2. **크롤링 프로그램 실행**:
+```bash
+cd project3/No7
+python crawling_KBS.py
+```
+
+**실행 결과**:
+- KBS 뉴스 실시간 헤드라인 10개 추출
+- List 객체 형태로 화면 출력
+- `.txt-wrapper .title` 구조 기반 크롤링
 
 ## 참고 자료
 
