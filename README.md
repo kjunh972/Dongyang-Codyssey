@@ -24,6 +24,7 @@
 - [문제2: 통신장비에 채팅 기능 추가](#문제2-통신장비에-채팅-기능-추가)
 - [문제4: 조금 더 나은 웹서버](#문제4-조금-더-나은-웹서버)
 - [문제7: 정기적으로 배달되는 지구소식](#문제7-정기적으로-배달되는-지구소식)
+- [문제8: 로그인을 넘어](#문제8-로그인을-넘어)
 
 ## 필수 과정1: 이별은 화성
 
@@ -131,6 +132,12 @@
 - **주요 파일**: 
   - [crawling_KBS.py](/project3/No7/crawling_KBS.py) - KBS 뉴스 크롤링 프로그램
 
+### 문제8: 로그인을 넘어
+- **디렉토리**: [project3/No8](/project3/No8)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 3-8](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: Selenium을 활용한 Naver 웹 크롤링 시스템 - 로그인 전후 콘텐츠 차이 분석
+- **주요 파일**: 
+  - [crawling_KBS.py](/project3/No8/crawling_KBS.py) - Naver 로그인 전후 크롤링 비교 프로그램
 ## 실행 방법
 
 ### 필수단계 1 과제 실행 방법
