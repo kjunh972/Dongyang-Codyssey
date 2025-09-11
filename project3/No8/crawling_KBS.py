@@ -40,7 +40,7 @@ class NaverCrawler:
                 if text:
                     self.before_login_content.append(f'서비스: {text}')
             
-            # 우상단 영역 버튼들
+            # 상단 영역 버튼
             top_buttons = [
                 ('#topAsideButton', '확장 영역'),
                 ('#topTalkArea .btn_talk', '톡'),
@@ -65,7 +65,7 @@ class NaverCrawler:
         time.sleep(3)
         
     def wait_for_manual_login(self):
-        print('브라우저에서 직접 로그인해주세요.')
+        print('\n브라우저에서 직접 로그인해주세요.')
         input('로그인 완료 후 엔터 키를 누르세요...')
         return True
     
