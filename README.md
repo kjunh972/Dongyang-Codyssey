@@ -28,6 +28,9 @@
 - [문제7: 정기적으로 배달되는 지구소식](#문제7-정기적으로-배달되는-지구소식)
 - [문제8: 로그인을 넘어](#문제8-로그인을-넘어)
 
+### 필수 과정4: 지구에서 온 비트
+- [문제1: 또 새로운 프로젝트](#문제1-또-새로운-프로젝트)
+
 ## 필수 과정1: 이별은 화성
 
 ### 문제1: 미션 컴퓨터를 복구하고 사고 원인을 파악해 보자
@@ -107,7 +110,7 @@
   - [sendmail.py](/project3/No1/sendmail.py) - Gmail SMTP 메일 발송 프로그램
 
 ### 문제2: 통신장비에 채팅 기능 추가
-- **디렉토리**: [project3/NO2](/project3/NO2)
+- **디렉토리**: [project3/NO2](/project3/No2)
 - **문제 링크**: [Codyssey 플랫폼 필수단계 3-2](https://usr.codyssey.kr/learning/learningProgress/detail)
 - **설명**: TCP/IP 소켓 통신을 이용한 멀티 클라이언트 채팅 시스템 구현
 - **주요 파일**: 
@@ -155,6 +158,23 @@
 - **설명**: Selenium을 활용한 Naver 웹 크롤링 시스템 - 로그인 전후 콘텐츠 차이 분석
 - **주요 파일**: 
   - [crawling_KBS.py](/project3/No8/crawling_KBS.py) - Naver 로그인 전후 크롤링 비교 프로그램
+
+## 필수 과정4: 지구에서 온 비트
+
+### 문제1: 또 새로운 프로젝트
+- **디렉토리**: [project4/No1](/project4/No1)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 4-1](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: FastAPI를 활용한 TODO 시스템 구축 - REST API 기반 할 일 관리 시스템
+- **주요 파일**: 
+  - [todo.py](/project4/No1/todo.py) - FastAPI TODO API 서버
+  - [todos.csv](/project4/No1/todos.csv) - CSV 데이터 저장소
+- **주요 기능**:
+  - FastAPI와 uvicorn을 활용한 웹 API 서버
+  - POST `/todo/add` - 새로운 할 일 추가
+  - GET `/todo` - 전체 할 일 목록 조회
+  - CSV 파일 기반 데이터 저장/로드
+  - 빈 값 입력 검증 및 오류 처리
+
 ## 실행 방법
 
 ### 필수단계 1 과제 실행 방법
@@ -237,6 +257,39 @@ python crawling_KBS.py
 - KBS 뉴스 실시간 헤드라인 10개 추출
 - List 객체 형태로 화면 출력
 - `.txt-wrapper .title` 구조 기반 크롤링
+
+### 필수단계 4-1 FastAPI TODO 시스템 실행 방법
+FastAPI TODO 시스템을 실행하려면 다음 순서로 진행합니다:
+
+1. **가상환경 설정 및 의존성 설치**:
+```bash
+cd project4
+python3 -m venv venv
+source venv/bin/activate
+pip install fastapi uvicorn
+```
+
+2. **FastAPI 서버 실행**:
+```bash
+cd No1
+python3 todo.py
+```
+
+3. **API 테스트**:
+- 브라우저에서 자동 문서 확인: `http://localhost:8000/docs`
+- POST 요청으로 할 일 추가: `POST /todo/add`
+- GET 요청으로 목록 조회: `GET /todo`
+
+**사용 예시**:
+```bash
+# 할 일 추가
+curl -X POST "http://localhost:8000/todo/add" \
+  -H "Content-Type: application/json" \
+  -d '{"content": "새로운 할 일"}'
+
+# 할 일 목록 조회
+curl -X GET "http://localhost:8000/todo"
+```
 
 ## 참고 자료
 
