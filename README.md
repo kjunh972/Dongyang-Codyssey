@@ -30,6 +30,7 @@
 
 ### 필수 과정4: 지구에서 온 비트
 - [문제1: 또 새로운 프로젝트](#문제1-또-새로운-프로젝트)
+- [문제3: 완전히 작동하는 Todo](#문제3-완전히-작동하는-todo)
 
 ## 필수 과정1: 이별은 화성
 
@@ -175,6 +176,20 @@
   - CSV 파일 기반 데이터 저장/로드
   - 빈 값 입력 검증 및 오류 처리
 
+### 문제3: 완전히 작동하는 Todo
+- **디렉토리**: [project4/No3](/project4/No3)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 4-3](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: FastAPI를 활용한 완전한 TODO CRUD 시스템 구축
+- **주요 파일**: 
+  - [todo.py](/project4/No3/todo.py) - FastAPI TODO API 서버
+  - [model.py](/project4/No3/model.py) - TodoItem 모델 정의
+  - [todos.csv](/project4/No3/todos.csv) - CSV 데이터 저장소
+- **주요 기능**:
+  - GET `/todo/{todo_id}` - 개별 할 일 조회 (get_single_todo)
+  - PUT `/todo/update/{todo_id}` - 할 일 수정 (update_todo) 
+  - DELETE `/todo/delete/{todo_id}` - 할 일 삭제 (delete_single_todo)
+  - TodoItem 모델 (BaseModel 상속)
+
 ## 실행 방법
 
 ### 필수단계 1 과제 실행 방법
@@ -289,6 +304,27 @@ curl -X POST "http://localhost:8000/todo/add" \
 
 # 할 일 목록 조회
 curl -X GET "http://localhost:8000/todo"
+```
+
+### 필수단계 4-3 FastAPI TODO 시스템 실행 방법 및 테스트
+**실행 방법**:
+```bash
+cd project4/No3
+python todo.py
+```
+
+**API 테스트 예시**:
+```bash
+# 개별 조회
+curl -X GET "http://localhost:8000/todo/1"
+
+# 수정
+curl -X PUT "http://localhost:8000/todo/update/1" \
+  -H "Content-Type: application/json" \
+  -d '{"content": "수정된 할 일"}'
+
+# 삭제  
+curl -X DELETE "http://localhost:8000/todo/delete/1"
 ```
 
 ## 참고 자료
