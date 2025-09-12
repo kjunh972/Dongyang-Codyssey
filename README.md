@@ -115,8 +115,8 @@
 - **문제 링크**: [Codyssey 플랫폼 필수단계 3-2](https://usr.codyssey.kr/learning/learningProgress/detail)
 - **설명**: TCP/IP 소켓 통신을 이용한 멀티 클라이언트 채팅 시스템 구현
 - **주요 파일**: 
-  - [chat_server.py](/project3/NO2/chat_server.py) - 채팅 서버
-  - [chat_client.py](/project3/NO2/chat_client.py) - 채팅 클라이언트
+  - [chat_server.py](/project3/No2/chat_server.py) - 채팅 서버
+  - [chat_client.py](/project3/No2/chat_client.py) - 채팅 클라이언트
 - **주요 기능**:
   - 멀티 쓰레드를 이용한 동시 접속 지원
   - 입장/퇴장 알림 메시지
@@ -133,12 +133,12 @@
   - [mail_target_list.csv](/project3/No2-2/mail_target_list.csv) - 메일 대상자 목록
 
 ### 문제4: 조금 더 나은 웹서버
-- **디렉토리**: [project3/NO4](/project3/NO4)
+- **디렉토리**: [project3/NO4](/project3/No4)
 - **문제 링크**: [Codyssey 플랫폼 필수단계 3-4](https://usr.codyssey.kr/learning/learningProgress/detail)
 - **설명**: HTTP 통신을 지원하는 웹서버를 구축하여 우주 해적 소개 페이지 제공
 - **주요 파일**: 
-  - [web_server.py](/project3/NO4/web_server.py) - HTTP 웹서버
-  - [index.html](/project3/NO4/index.html) - 우주 해적 소개 웹페이지
+  - [web_server.py](/project3/No4/web_server.py) - HTTP 웹서버
+  - [index.html](/project3/No4/index.html) - 우주 해적 소개 웹페이지
 - **주요 기능**:
   - HTTP 서버 (8080 포트)
   - HTTP 200 OK 응답 헤더 전송
