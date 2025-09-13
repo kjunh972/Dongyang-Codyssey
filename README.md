@@ -31,6 +31,7 @@
 ### 필수 과정4: 지구에서 온 비트
 - [문제1: 또 새로운 프로젝트](#문제1-또-새로운-프로젝트)
 - [문제3: 완전히 작동하는 Todo](#문제3-완전히-작동하는-todo)
+- [문제5: 데이터베이스를 또...](#문제5-데이터베이스를-또)
 
 ## 필수 과정1: 이별은 화성
 
@@ -111,7 +112,7 @@
   - [sendmail.py](/project3/No1/sendmail.py) - Gmail SMTP 메일 발송 프로그램
 
 ### 문제2: 통신장비에 채팅 기능 추가
-- **디렉토리**: [project3/NO2](/project3/No2)
+- **디렉토리**: [project3/No2](/project3/No2)
 - **문제 링크**: [Codyssey 플랫폼 필수단계 3-2](https://usr.codyssey.kr/learning/learningProgress/detail)
 - **설명**: TCP/IP 소켓 통신을 이용한 멀티 클라이언트 채팅 시스템 구현
 - **주요 파일**: 
@@ -133,7 +134,7 @@
   - [mail_target_list.csv](/project3/No2-2/mail_target_list.csv) - 메일 대상자 목록
 
 ### 문제4: 조금 더 나은 웹서버
-- **디렉토리**: [project3/NO4](/project3/No4)
+- **디렉토리**: [project3/No4](/project3/No4)
 - **문제 링크**: [Codyssey 플랫폼 필수단계 3-4](https://usr.codyssey.kr/learning/learningProgress/detail)
 - **설명**: HTTP 통신을 지원하는 웹서버를 구축하여 우주 해적 소개 페이지 제공
 - **주요 파일**: 
@@ -189,6 +190,16 @@
   - PUT `/todo/update/{todo_id}` - 할 일 수정 (update_todo) 
   - DELETE `/todo/delete/{todo_id}` - 할 일 삭제 (delete_single_todo)
   - TodoItem 모델 (BaseModel 상속)
+
+### 문제5: 데이터베이스를 또...
+- **디렉토리**: [project4/No5](/project4/No5)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 4-5](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: SQLAlchemy ORM과 Alembic을 활용한 게시판 시스템 데이터베이스 구축
+- **주요 파일**: 
+  - [main.py](/project4/No5/main.py) - FastAPI 애플리케이션
+  - [database.py](/project4/No5/database.py) - 데이터베이스 설정
+  - [models.py](/project4/No5/models.py) - Question 모델 정의
+  - [myapi.db](/project4/No5/myapi.db) - SQLite 데이터베이스
 
 ## 실행 방법
 
