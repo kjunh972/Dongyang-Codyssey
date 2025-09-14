@@ -32,6 +32,7 @@
 - [문제1: 또 새로운 프로젝트](#문제1-또-새로운-프로젝트)
 - [문제3: 완전히 작동하는 Todo](#문제3-완전히-작동하는-todo)
 - [문제5: 데이터베이스를 또...](#문제5-데이터베이스를-또)
+- [문제6: 질문 기능을 추가해보자](#문제6-질문-기능을-추가해보자)
 
 ## 필수 과정1: 이별은 화성
 
@@ -200,6 +201,15 @@
   - [database.py](/project4/No5/database.py) - 데이터베이스 설정
   - [models.py](/project4/No5/models.py) - Question 모델 정의
   - [myapi.db](/project4/No5/myapi.db) - SQLite 데이터베이스
+
+### 문제6: 질문 기능을 추가해보자
+- **디렉토리**: [project4/No6](/project4/No6)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 4-6](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **주요 파일**: 
+  - [main.py](/project4/No6/main.py) - FastAPI 애플리케이션
+  - [question_router.py](/project4/No6/domain/question/question_router.py) - 질문 라우터
+  - [database.py](/project4/No6/database.py) - 데이터베이스 설정
+  - [models.py](/project4/No6/models.py) - Question 모델 정의
 
 ## 실행 방법
 
