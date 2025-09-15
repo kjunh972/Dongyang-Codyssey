@@ -33,6 +33,7 @@
 - [문제3: 완전히 작동하는 Todo](#문제3-완전히-작동하는-todo)
 - [문제5: 데이터베이스를 또...](#문제5-데이터베이스를-또)
 - [문제6: 질문 기능을 추가해보자](#문제6-질문-기능을-추가해보자)
+- [문제7: 또 다시 알 수 없는 오류](#문제7-또-다시-알-수-없는-오류)
 
 ## 필수 과정1: 이별은 화성
 
@@ -205,11 +206,22 @@
 ### 문제6: 질문 기능을 추가해보자
 - **디렉토리**: [project4/No6](/project4/No6)
 - **문제 링크**: [Codyssey 플랫폼 필수단계 4-6](https://usr.codyssey.kr/learning/learningProgress/detail)
-- **주요 파일**: 
+- **설명**: APIRouter를 활용한 라우팅 시스템과 ORM 기반 질문 목록 조회 기능 구현
+- **주요 파일**:
   - [main.py](/project4/No6/main.py) - FastAPI 애플리케이션
   - [question_router.py](/project4/No6/domain/question/question_router.py) - 질문 라우터
   - [database.py](/project4/No6/database.py) - 데이터베이스 설정
   - [models.py](/project4/No6/models.py) - Question 모델 정의
+
+### 문제7: 또 다시 알 수 없는 오류
+- **디렉토리**: [project4/No7](/project4/No7)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 4-7](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **설명**: contextlib을 이용한 의존성 주입과 Pydantic 스키마를 활용한 데이터베이스 세션 관리 개선
+- **주요 파일**:
+  - [main.py](/project4/No7/main.py) - FastAPI 애플리케이션
+  - [database.py](/project4/No7/database.py) - contextlib 기반 DB 세션 관리
+  - [schemas.py](/project4/No7/schemas.py) - Pydantic 응답 스키마
+  - [question_router.py](/project4/No7/domain/question/question_router.py) - 개선된 질문 라우터
 
 ## 실행 방법
 
