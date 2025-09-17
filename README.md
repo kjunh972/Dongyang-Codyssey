@@ -34,6 +34,7 @@
 - [문제5: 데이터베이스를 또...](#문제5-데이터베이스를-또)
 - [문제6: 질문 기능을 추가해보자](#문제6-질문-기능을-추가해보자)
 - [문제7: 또 다시 알 수 없는 오류](#문제7-또-다시-알-수-없는-오류)
+- [문제8: 질문을 올려봐](#문제8-질문을-올려봐)
 
 ## 필수 과정1: 이별은 화성
 
@@ -222,6 +223,15 @@
   - [database.py](/project4/No7/database.py) - contextlib 기반 DB 세션 관리
   - [schemas.py](/project4/No7/schemas.py) - Pydantic 응답 스키마
   - [question_router.py](/project4/No7/domain/question/question_router.py) - 개선된 질문 라우터
+
+### 문제8: 질문을 올려봐
+- **디렉토리**: [project4/No8](/project4/No8)
+- **문제 링크**: [Codyssey 플랫폼 필수단계 4-8](https://usr.codyssey.kr/learning/learningProgress/detail)
+- **주요 파일**:
+  - [main.py](/project4/No8/main.py) - FastAPI 애플리케이션
+  - [database.py](/project4/No8/database.py) - contextlib 기반 DB 세션 관리
+  - [schemas.py](/project4/No8/schemas.py) - QuestionCreate, QuestionResponse 스키마
+  - [question_router.py](/project4/No8/domain/question/question_router.py) - 질문 조회 및 등록 라우터
 
 ## 실행 방법
 
